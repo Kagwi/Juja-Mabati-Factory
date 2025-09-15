@@ -93,7 +93,7 @@ const HomePage = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-contain object-top"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center">
