@@ -181,9 +181,9 @@ const AboutPage = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-1">
                   <img
-                    src="/ceo-image.png"
-                    alt={teamMembers[0].name}
-                    className="w-80 h-80 rounded-xl object-cover mx-auto shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:rotate-2"
+                     src={teamMembers[0].image}
+                     alt={teamMembers[0].name}
+                     className="w-80 h-80 rounded-xl object-cover mx-auto shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:rotate-2"   
                   />
                 </div>
                 <div className="lg:col-span-2">
