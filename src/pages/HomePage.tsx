@@ -7,12 +7,12 @@ const HomePage = () => {
 
   const slides = [
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team.jpg?raw=true',
+      image: '/Team.jpg" alt="Juja Mabati Team"',
       title: 'Juja Mabati Team',
       subtitle: 'Durable and aesthetically pleasing roofing solutions'
     },
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%205%20.jpg?raw=true',
+      image: '/Team-5.jpg" alt="Juja Mabati Entrance',
       title: 'Juja Mabati Gate',
       subtitle: 'Weather-resistant with superior finish'
     },
