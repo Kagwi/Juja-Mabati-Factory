@@ -7,33 +7,33 @@ const HomePage = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Premium Box Profile Sheets',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team.jpg?raw=true',
+      title: 'Juja Mabati Team',
       subtitle: 'Durable and aesthetically pleasing roofing solutions'
     },
     {
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Stone Coated Roofing',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%205%20.jpg?raw=true',
+      title: 'Juja Mabati Gate',
       subtitle: 'Weather-resistant with superior finish'
     },
     {
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Industrial Solutions',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%202.jpg?raw=true',
+      title: 'Juja Mabati Front Office',
       subtitle: 'Large-scale roofing for commercial projects'
     },
     {
-      image: 'https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'V Tile Excellence',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%20.jpg?raw=true',
+      title: 'Juja Mabati Front Office Team',
       subtitle: 'Modern aesthetics with unmatched durability'
     },
     {
-      image: 'https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Roman Tile Collection',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%203.jpg?raw=true',
+      title: 'Juja Mabati Founders',
       subtitle: 'Classic elegance meets modern engineering'
     },
     {
-      image: 'https://images.pexels.com/photos/1396119/pexels-photo-1396119.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Corrugated Sheets',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%206.jpg?raw=true',
+      title: 'Juja Mabati',
       subtitle: 'Reliable protection for every project'
     }
   ];
