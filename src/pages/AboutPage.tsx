@@ -125,7 +125,7 @@ const AboutPage = () => {
               <img
                 src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%205%20.jpg?raw=true"
                 alt="Manufacturing facility"
-                className="rounded-lg shadow-xl w-full h-96 object-cover hover:scale-110 hover:rotate-2 hover:shadow-2xl transition-all duration-500"
+                className="rounded-lg shadow-xl w-full h-96 object-cover object-top hover:scale-110 hover:rotate-2 hover:shadow-2xl transition-all duration-500"
               />
             </div>
           </div>
