@@ -27,7 +27,7 @@ const HomePage = () => {
       subtitle: 'Modern aesthetics with unmatched durability'
     },
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%203.jpg?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%20A.jpg?raw=true',
       title: 'Juja Mabati Founders',
       subtitle: 'Classic elegance meets modern engineering'
     },
