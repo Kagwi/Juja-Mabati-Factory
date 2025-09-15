@@ -7,7 +7,7 @@ const HomePage = () => {
 
   const slides = [
     {
-      image: '/Team.jpg" alt="Juja Mabati Team"',
+      image: '/public/Team.jpg" alt="Juja Mabati Team"',
       title: 'Juja Mabati Team',
       subtitle: 'Durable and aesthetically pleasing roofing solutions'
     },
