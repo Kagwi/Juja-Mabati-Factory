@@ -123,7 +123,7 @@ const AboutPage = () => {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%205%20.jpg?raw=true"
                 alt="Manufacturing facility"
                 className="rounded-lg shadow-xl w-full h-96 object-cover hover:scale-110 hover:rotate-2 hover:shadow-2xl transition-all duration-500"
               />
