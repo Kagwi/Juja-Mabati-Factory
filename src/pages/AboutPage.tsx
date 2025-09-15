@@ -27,59 +27,41 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'James Mwangi',
+      name: 'Gakuru Muraguri',
       position: 'Chief Executive Officer',
-      image: '/ceo-image.png',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
       description: 'With over 15 years of experience in the roofing industry, James has led Juja Mabati Factory to become Kenya\'s premier roofing manufacturer. His vision for innovation and quality has driven the company\'s growth from a small local business to a nationwide leader. Under his leadership, the company has maintained its commitment to excellence while expanding its product range and market reach. James is passionate about sustainable building solutions and delivering quality roofing solutions to every customer.',
       isCEO: true
     },
     {
-      name: 'Mary Wanjiku',
-      position: 'Production Manager',
-      image: 'https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Mercy',
+      position: 'Marketing Manager',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Mercy.jpg?raw=true',
       description: 'Oversees all production processes ensuring quality standards.'
     },
     {
-      name: 'Peter Kamau',
-      position: 'Sales Director',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Sally',
+      position: 'Customer Care Representative',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Sally.jpg?raw=true',
       description: 'Leads our sales team and manages customer relationships nationwide.'
     },
     {
-      name: 'Grace Njeri',
-      position: 'Quality Control Manager',
-      image: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Mwangi',
+      position: 'Company Driver',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Company%20Driver.jpg?raw=true',
       description: 'Ensures every product meets our strict quality standards.'
     },
     {
-      name: 'Daniel Ochieng',
-      position: 'Technical Engineer',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
+      name: 'Daniel & Ochieng',
+      position: 'Dispatch Officials',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Dispatch%20Team.jpg?raw=true',
       description: 'Provides technical expertise and product development.'
     },
     {
       name: 'Sarah Akinyi',
-      position: 'Customer Service Lead',
+      position: 'Dispatch Official',
       image: 'https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
       description: 'Ensures exceptional customer service and satisfaction.'
-    },
-    {
-      name: 'John Kiprotich',
-      position: 'Logistics Coordinator',
-      image: 'https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Manages delivery operations and supply chain efficiency.'
-    },
-    {
-      name: 'Catherine Wanjiru',
-      position: 'Financial Manager',
-      image: 'https://images.pexels.com/photos/3727466/pexels-photo-3727466.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Handles financial planning and business operations.'
-    },
-    {
-      name: 'Michael Otieno',
-      position: 'Installation Supervisor',
-      image: 'https://images.pexels.com/photos/2379007/pexels-photo-2379007.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Supervises installation teams and project execution.'
     }
   ];
 
