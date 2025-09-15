@@ -54,7 +54,7 @@ const ContactPage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
+            src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
             alt="Contact us background"
             className="w-full h-full object-cover"
           />
