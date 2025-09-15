@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.scrollbar-track-gray-100::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Golden hover effects */
+.golden-hover:hover {
+  @apply bg-gradient-to-r from-yellow-400 to-amber-500 text-white shadow-lg transform scale-105;
+}
+
+/* Enhanced button animations */
+.btn-golden {
+  @apply transition-all duration-300 hover:shadow-xl hover:scale-110 hover:-translate-y-2;
+}
+
+.btn-golden:hover {
+  @apply bg-gradient-to-r from-amber-400 to-yellow-500 shadow-2xl;
+}
