@@ -30,7 +30,7 @@ const AboutPage = () => {
       name: 'Gakuru Muraguri',
       position: 'Chief Executive Officer',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
-      description: 'With over 15 years of experience in the roofing industry, James has led Juja Mabati Factory to become Kenya\'s premier roofing manufacturer. His vision for innovation and quality has driven the company\'s growth from a small local business to a nationwide leader. Under his leadership, the company has maintained its commitment to excellence while expanding its product range and market reach. James is passionate about sustainable building solutions and delivering quality roofing solutions to every customer.',
+      description: 'With over 15 years of experience in the roofing industry, James has led Juja Mabati Factory to become Kenya\'s premier roofing manufacturer. His vision for innovation and quality has driven the company\'s growth from a small local business to a nationwide leader. Under his leadership, the company has maintained its commitment to excellence while expanding its product range and market reach. James is passionate about sustainable building solutions and delivering quality roofing solutions to every customer.'
     },
     {
       name: 'Mercy',
