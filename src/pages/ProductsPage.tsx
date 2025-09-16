@@ -79,7 +79,7 @@ const ProductsPage = () => {
     {
       name: 'Corrugated/Normal Sheets',
       id: 'corrugated-sheets',
-      image: 'https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Corrugated%20Sheets.PNG?raw=true',
       variants: [
         { type: 'Colored', gauge: 30, price: 450 },
         { type: 'Colored', gauge: 28, price: 600 },
@@ -140,7 +140,7 @@ const ProductsPage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
+            src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
             alt="Products background"
             className="w-full h-full object-cover"
           />
