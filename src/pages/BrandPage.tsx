@@ -42,7 +42,7 @@ const BrandPage = () => {
   ];
 
   const partnerLogos = [
-    '/public/Dama Spares Logo.PNG',
+    'Juja-Mabati-Factory/public/Dama Spares Logo.PNG',
     'NGCDF',
     'Murang\'a County Government',
     'Kenya Vision 2030',
