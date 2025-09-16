@@ -42,7 +42,7 @@ const BrandPage = () => {
   ];
 
   const partnerLogos = [
-    'Dama Spares Logo.PNG',
+    '/public/Dama Spares Logo.PNG',
     'NGCDF',
     'Murang\'a County Government',
     'Kenya Vision 2030',
