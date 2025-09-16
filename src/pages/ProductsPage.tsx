@@ -26,7 +26,7 @@ const ProductsPage = () => {
     {
       name: 'Box Profile',
       id: 'box-profile',
-      image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Box%20Profile.PNG?raw=true',
       variants: [
         { type: 'Glossy', gauge: 30, price: 475 },
         { type: 'Glossy', gauge: 28, price: 605 },
@@ -37,7 +37,7 @@ const ProductsPage = () => {
     {
       name: 'V Tile',
       id: 'v-tile',
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/V%20Tile.PNG?raw=true',
       variants: [
         { type: 'Glossy', gauge: 30, price: 572 },
         { type: 'Glossy', gauge: 28, price: 645 },
@@ -48,7 +48,7 @@ const ProductsPage = () => {
     {
       name: 'Roman Tile',
       id: 'roman-tile',
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Roman%20Tile.PNG?raw=true',
       variants: [
         { type: 'Glossy', gauge: 30, price: 572 },
         { type: 'Glossy', gauge: 28, price: 645 },
@@ -93,24 +93,24 @@ const ProductsPage = () => {
       image: 'https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
       variants: [
         { type: 'Standard', gauge: 30, price: 600, unit: 'per piece' }
+        { type: 'Glossy', gauge: 30, price: 450, unit: 'per piece' }
       ]
     },
     {
-      name: 'Glossy Sheets',
-      id: 'glossy-sheets',
+      name: 'Roofing Nails',
+      id: 'roofing nails',
       image: 'https://images.pexels.com/photos/1396121/pexels-photo-1396121.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
       variants: [
-        { type: 'Glossy', gauge: 30, price: 450 },
-        { type: 'Glossy', gauge: 28, price: 550 }
+        { type: 'Normal Silver', price: 250, unit: 'per kg' },
+        { type: 'Colored', price: 600, unit: 'per kg' }
       ]
     },
     {
-      name: 'Matte Finish Sheets',
-      id: 'matte-finish-sheets',
+      name: 'Rubber/Washer',
+      id: 'rubber/washer',
       image: 'https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
       variants: [
-        { type: 'Matte', gauge: 30, price: 600 },
-        { type: 'Matte', gauge: 28, price: 700 }
+        { price: 100, unit: 'per packet' }
       ]
     },
     {
