@@ -59,7 +59,7 @@ const ProductsPage = () => {
     {
       name: 'Euro Tile',
       id: 'euro-tile',
-      image: 'https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Euro%20Tile.PNG?raw=true',
       variants: [
         { type: 'Glossy', gauge: 30, price: 572 },
         { type: 'Glossy', gauge: 28, price: 645 },
@@ -70,7 +70,7 @@ const ProductsPage = () => {
     {
       name: 'Decra Stone Coated',
       id: 'decra-stone-coated',
-      image: 'https://images.pexels.com/photos/1396119/pexels-photo-1396119.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Decra%20Stone%20Coated%20Iron%20Sheets.PNG?raw=true',
       variants: [
         { type: 'Matte', gauge: 26, price: 720 },
         { type: 'Matte', gauge: 28, price: 680 }
@@ -90,7 +90,7 @@ const ProductsPage = () => {
     {
       name: 'Rolltops',
       id: 'rolltops',
-      image: 'https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rolltops.PNG?raw=true',
       variants: [
         { type: 'Standard', gauge: 30, price: 600, unit: 'per piece' }
         { type: 'Glossy', gauge: 30, price: 450, unit: 'per piece' }
@@ -99,7 +99,7 @@ const ProductsPage = () => {
     {
       name: 'Roofing Nails',
       id: 'roofing nails',
-      image: 'https://images.pexels.com/photos/1396121/pexels-photo-1396121.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Roofing%20Nails.PNG?raw=true',
       variants: [
         { type: 'Normal Silver', price: 250, unit: 'per kg' },
         { type: 'Colored', price: 600, unit: 'per kg' }
@@ -108,18 +108,9 @@ const ProductsPage = () => {
     {
       name: 'Rubber/Washer',
       id: 'rubber/washer',
-      image: 'https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rubber%20Washer.PNG?raw=true',
       variants: [
         { price: 100, unit: 'per packet' }
-      ]
-    },
-    {
-      name: 'Roofing Nails',
-      id: 'roofing-nails',
-      image: 'https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
-      variants: [
-        { type: 'Silver', gauge: null, price: 250, unit: '/kg' },
-        { type: 'Colored', gauge: null, price: 600, unit: '/kg' }
       ]
     }
   ];
