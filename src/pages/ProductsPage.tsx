@@ -92,7 +92,7 @@ const ProductsPage = () => {
       id: 'rolltops',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rolltops.PNG?raw=true',
       variants: [
-        { type: 'Standard', gauge: 30, price: 600, unit: 'per piece' }
+        { type: 'Standard', gauge: 30, price: 600, unit: 'per piece' },
         { type: 'Glossy', gauge: 30, price: 450, unit: 'per piece' }
       ]
     },
