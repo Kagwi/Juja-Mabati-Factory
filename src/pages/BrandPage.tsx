@@ -6,12 +6,12 @@ const BrandPage = () => {
     {
       name: 'Ndegenye',
       title: 'Our Brand Ambassador',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Ndegenye.PNG?raw=true'
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Ndegenye%201.PNG?raw=true'
     },
     {
       name: 'Baba Talisha',
       title: 'Our Brand Ambassador',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Ndegenye.PNG?raw=true'
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Baba%20Talisha.PNG?raw=true'
     },
     {
       name: 'Damaris Wa Dama Spares',
