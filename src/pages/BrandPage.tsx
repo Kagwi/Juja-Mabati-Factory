@@ -113,12 +113,12 @@ const BrandPage = () => {
               <img
                 src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%20A.jpg?raw=true"
                 alt="Manufacturing excellence"
-                className="rounded-xl shadow-2xl w-full h-64 object-cover"
+                className="rounded-xl shadow-2xl w-full h-64 object-cover object-top"
               />
               <img
                 src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team.jpg?raw=true"
                 alt="Quality products"
-                className="rounded-xl shadow-2xl w-full h-48 object-cover"
+                className="rounded-xl shadow-2xl w-full h-48 object-cover object-top"
               />
             </div>
           </div>
