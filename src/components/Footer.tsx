@@ -39,13 +39,13 @@ const Footer = () => {
                 and aesthetically pleasing roofing materials with 15-years Fade-Free Warranty.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
+                <a href="https://www.facebook.com/PreciseGeotech" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
                   <Facebook className="h-5 w-5 hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a href="#" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
                   <Twitter className="h-5 w-5 hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
+                <a href="https://www.instagram.com/jujamabatifactory/" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
                   <Instagram className="h-5 w-5 hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a href="#" className="text-gray-300 hover:text-amber-500 hover:scale-125 hover:rotate-12 hover:-translate-y-1 transition-all duration-300">
