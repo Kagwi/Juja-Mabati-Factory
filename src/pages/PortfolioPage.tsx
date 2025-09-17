@@ -40,18 +40,18 @@ const PortfolioPage = () => {
   ];
 
   const projectImages = [
-    { id: 1, title: 'Modern Residential Villa', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%201%20Residential.PNG?raw=true', category: 'Residential' },
-    { id: 2, title: 'Commercial Shopping Complex', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%205%20Commercial.PNG?raw=true', category: 'Commercial' },
-    { id: 3, title: 'Industrial Warehouse Facility', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%2011%20Industrial.PNG?raw=true', category: 'Industrial' },
-    { id: 4, title: 'University Administration Block', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%203%20Learning%20Institutions.PNG?raw=true', category: 'Learning Institutions' },
+    { id: 1, title: 'Modern Residential', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%201%20Residential.PNG?raw=true', category: 'Residential' },
+    { id: 2, title: 'Offices', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%205%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 3, title: 'Industrial Facility', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%2011%20Industrial.PNG?raw=true', category: 'Industrial' },
+    { id: 4, title: 'Learning Institution', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%203%20Learning%20Institutions.PNG?raw=true', category: 'Learning Institutions' },
     { id: 5, title: 'Luxury Family Home', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%202%20Residential.PNG?raw=true', category: 'Residential' },
-    { id: 6, title: 'Office Complex Downtown', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%206%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 6, title: 'Hospital Complex', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%206%20Commercial.PNG?raw=true', category: 'Commercial' },
     { id: 7, title: 'Manufacturing Plant', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%204%20Industrial.PNG?raw=true', category: 'Industrial' },
     { id: 8, title: 'Primary School Buildings', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%208%20Learning%20Institution.PNG?raw=true', category: 'Learning Institutions' },
     { id: 9, title: 'Housing Estate Development', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%2010%20Construction.PNG?raw=true', category: 'Construction' },
-    { id: 10, title: 'Retail Shopping Mall', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%209%20Commercial.PNG?raw=true', category: 'Commercial' },
-    { id: 11, title: 'Technical College Campus', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%207%20Residential.PNG?raw=true', category: 'Residential' },
-    { id: 12, title: 'Mixed-Use Development', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%20Residential.PNG?raw=true', category: 'Residential' }
+    { id: 10, title: 'Retail Business Building', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%209%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 11, title: 'Residential Home', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%207%20Residential.PNG?raw=true', category: 'Residential' },
+    { id: 12, title: 'Modern Home', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%20Residential.PNG?raw=true', category: 'Residential' }
   ];
 
   const categories = ['All', 'Residential', 'Commercial', 'Industrial', 'Learning Institutions', 'Construction'];
