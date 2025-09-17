@@ -10,30 +10,30 @@ const PortfolioPage = () => {
     {
       id: 1,
       title: 'Box Profile Manufacturing Process',
-      thumbnail: '',
+      thumbnail: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Box%20Profile.PNG?raw=true',
       videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Boxprofile.mp4',
-      description: 'Behind-the-scenes look at our state-of-the-art box profile manufacturing process'
+      description: 'Box-profile roofing sheets production'
     },
     {
       id: 2,
       title: 'Corrugated Roofing Sheets Production',
-      thumbnail: '',
+      thumbnail: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Corrugated%20Sheets.PNG?raw=true',
       videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Corrugated%20Sheets.mp4',
-      description: 'Detailed overview of our premium stone coated roofing production line'
+      description: 'Corrugated roofing sheets production'
     },
     {
       id: 3,
-      title: 'Quality Control & Testing',
-      thumbnail: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      videoUrl: '#',
-      description: 'Our rigorous quality control processes ensuring 15-year warranty standards'
+      title: 'Euro Tile Roofing Sheets Production',
+      thumbnail: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Euro%20Tile.PNG?raw=true',
+      videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Euro%20Tile.PNG',
+      description: 'Euro tile roofing sheets production'
     },
     {
       id: 4,
-      title: 'Installation Training Workshop',
-      thumbnail: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      videoUrl: '#',
-      description: 'Professional installation techniques and best practices training session'
+      title: 'V-Tile Roofing Sheets Production',
+      thumbnail: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/V%20Tile.PNG?raw=true',
+      videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/V-tile.mp4',
+      description: 'Professional v-tile production'
     }
   ];
 
