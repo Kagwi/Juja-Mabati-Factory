@@ -11,7 +11,7 @@ const PortfolioPage = () => {
       id: 1,
       title: 'Box Profile Manufacturing Process',
       thumbnail: '',
-      videoUrl: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/06322e818913b497fcbc6a650651f9a2c49abc47/public/Boxprofile.mp4',
+      videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Boxprofile.mp4',
       description: 'Behind-the-scenes look at our state-of-the-art box profile manufacturing process'
     },
     {
