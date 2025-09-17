@@ -6,38 +6,32 @@ const BrandPage = () => {
     {
       name: 'Jennifer Wairimu',
       title: 'Residential Roofing Specialist',
-      image: 'https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'Juja Mabati Factory has been my go-to supplier for over 5 years. Their consistent quality and reliability make my job easier.'
+      image: 'https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     },
     {
       name: 'David Kimani',
       title: 'Commercial Construction Manager',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'For large-scale projects, I trust only Juja Mabati Factory. Their delivery timelines and product consistency are unmatched.'
+      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     },
     {
       name: 'Grace Muthoni',
       title: 'Interior Design Consultant',
-      image: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'The aesthetic appeal of their roofing products complements my design concepts perfectly. Quality meets beauty.'
+      image: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     },
     {
       name: 'Peter Njuguna',
       title: 'Independent Contractor',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'The 15-year warranty gives my clients confidence. I\'ve never had a complaint about Juja Mabati products.'
+      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     },
     {
       name: 'Mary Wanjiku',
       title: 'Architect & Building Designer',
-      image: 'https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'Innovation and sustainability - that\'s what I see in every Juja Mabati Factory product. They understand modern needs.'
+      image: 'https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     },
     {
       name: 'Samuel Kariuki',
       title: 'Property Developer',
-      image: 'https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
-      testimonial: 'Cost-effective solutions without compromising on quality. Juja Mabati Factory helps maximize my project ROI.'
+      image: 'https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
     }
   ];
 
