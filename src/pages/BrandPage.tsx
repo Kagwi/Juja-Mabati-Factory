@@ -33,15 +33,12 @@ const BrandPage = () => {
   // ✅ Use real logo URLs instead of text
   const partnerLogos = [
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Dama%20Spares%20Logo.PNG',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/NGCDF.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Muranga%20County.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Kenya%20Vision%202030.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/EPZ.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/LAPSSET.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Real%20Estate%20of%20Kenya.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/KAM.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/KEBS.png',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Ministry%20of%20Housing.png'
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/EPZ%20Logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/KPRA%20logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Lapsset%20Logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Muranga%20County%20Logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Vision%202030%20Logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/NGCDF%20Logo.PNG'
   ];
 
   return (
