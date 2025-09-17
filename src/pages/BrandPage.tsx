@@ -36,7 +36,7 @@ const BrandPage = () => {
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/EPZ%20Logo.PNG',
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/KPRA%20logos.PNG',
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Lapsset%20Logo.PNG',
-    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Muranga%20County%20Logo.PNG',
+    'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Murang'a%20County%20Logo.PNG',
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Vision%202030%20Logo.PNG',
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/NGCDF%20Logo.PNG'
   ];
