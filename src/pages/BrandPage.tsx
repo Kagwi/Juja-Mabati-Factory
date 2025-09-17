@@ -11,7 +11,7 @@ const BrandPage = () => {
     {
       name: 'Baba Talisha',
       title: 'Our Brand Ambassador',
-      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Baba%20Talisha.PNG'
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Baba%20Talisha.PNG?raw=true'
     },
     {
       name: 'Damaris Wa Dama Spares',
