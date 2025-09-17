@@ -108,7 +108,7 @@ const ProductsPage = () => {
     {
       name: 'Rubber/Washer',
       id: 'rubber/washer',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rubber%20Washer.PNG?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rubberwashers.png?raw=true',
       variants: [
         { price: 100, unit: 'per packet' }
       ]
