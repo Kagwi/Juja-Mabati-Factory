@@ -11,7 +11,7 @@ const PortfolioPage = () => {
       id: 1,
       title: 'Box Profile Manufacturing Process',
       thumbnail: 'https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      videoUrl: '#', // In a real app, this would be the actual video URL
+      videoUrl: 'https://github.com/Kagwi/Juja-Mabati-Factory/raw/refs/heads/main/public/Corrugated%20Sheets.mp4', // In a real app, this would be the actual video URL
       description: 'Behind-the-scenes look at our state-of-the-art box profile manufacturing process'
     },
     {
