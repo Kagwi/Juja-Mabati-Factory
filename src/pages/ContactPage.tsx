@@ -10,7 +10,6 @@ const ContactPage = () => {
     phone: '',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     if (location.state?.productName) {
@@ -32,12 +31,8 @@ const ContactPage = () => {
     );
     window.location.href = `mailto:jujamabatifactoryltd@gmail.com?subject=${subject}&body=${body}`;
 
-    // Reset form after sending
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ fullName: '', email: '', phone: '', message: '' });
-    }, 3000);
+    // Clear form after opening mail client
+    setFormData({ fullName: '', email: '', phone: '', message: '' });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -59,7 +54,6 @@ const ContactPage = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-red-600 to-red-800 text-white py-20 overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
@@ -69,7 +63,6 @@ const ContactPage = () => {
           <div className="absolute inset-0 bg-red-600 bg-opacity-80"></div>
         </div>
         
-        {/* Content */}
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -87,106 +80,98 @@ const ContactPage = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
             {/* Contact Form */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-              
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4 animate-bounce" />
-                  <h3 className="text-2xl font-bold text-green-600 mb-2">Message Sent!</h3>
-                  <p className="text-gray-600">Your email client should open. Thank you for contacting us!</p>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
+                    placeholder="Enter your full name"
+                  />
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="fullName"
-                      name="fullName"
-                      required
-                      value={formData.fullName}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
+                    placeholder="Enter your email address"
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
-                      placeholder="Enter your phone number"
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={6}
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
-                      placeholder="Tell us about your project requirements..."
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={6}
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300 hover:border-amber-400 hover:shadow-md focus:scale-105"
+                    placeholder="Tell us about your project requirements..."
+                  />
+                </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <button
-                      type="submit"
-                      className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 flex items-center justify-center space-x-2"
-                    >
-                      <Send className="h-5 w-5" />
-                      <span>Send Message</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={handleWhatsAppClick}
-                      className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 flex items-center justify-center space-x-2"
-                    >
-                      <MessageCircle className="h-5 w-5" />
-                      <span>WhatsApp Chat</span>
-                    </button>
-                  </div>
-                </form>
-              )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <button
+                    type="submit"
+                    className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 flex items-center justify-center space-x-2"
+                  >
+                    <Send className="h-5 w-5" />
+                    <span>Send Message</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleWhatsAppClick}
+                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 flex items-center justify-center space-x-2"
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    <span>WhatsApp Chat</span>
+                  </button>
+                </div>
+              </form>
             </div>
 
             {/* Contact Information */}
             <div className="space-y-8">
-              {/* Company Details */}
               <div className="bg-gray-50 rounded-xl p-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
                 
