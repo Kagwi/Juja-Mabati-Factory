@@ -111,12 +111,12 @@ const BrandPage = () => {
             </div>
             <div className="space-y-6">
               <img
-                src="https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%20A.jpg?raw=true"
                 alt="Manufacturing excellence"
                 className="rounded-xl shadow-2xl w-full h-64 object-cover"
               />
               <img
-                src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800&h=300&fit=crop"
+                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team.jpg?raw=true"
                 alt="Quality products"
                 className="rounded-xl shadow-2xl w-full h-48 object-cover"
               />
