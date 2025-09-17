@@ -40,18 +40,18 @@ const PortfolioPage = () => {
   ];
 
   const projectImages = [
-    { id: 1, title: 'Modern Residential Villa', image: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Residential' },
-    { id: 2, title: 'Commercial Shopping Complex', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Commercial' },
-    { id: 3, title: 'Industrial Warehouse Facility', image: 'https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Industrial' },
-    { id: 4, title: 'University Administration Block', image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Learning Institutions' },
-    { id: 5, title: 'Luxury Family Home', image: 'https://images.pexels.com/photos/1396119/pexels-photo-1396119.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Residential' },
-    { id: 6, title: 'Office Complex Downtown', image: 'https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Commercial' },
-    { id: 7, title: 'Manufacturing Plant', image: 'https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Industrial' },
-    { id: 8, title: 'Primary School Buildings', image: 'https://images.pexels.com/photos/1396121/pexels-photo-1396121.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Learning Institutions' },
-    { id: 9, title: 'Housing Estate Development', image: 'https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Construction' },
-    { id: 10, title: 'Retail Shopping Mall', image: 'https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Commercial' },
-    { id: 11, title: 'Technical College Campus', image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Learning Institutions' },
-    { id: 12, title: 'Mixed-Use Development', image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop', category: 'Construction' }
+    { id: 1, title: 'Modern Residential Villa', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%201%20Residential.PNG?raw=true', category: 'Residential' },
+    { id: 2, title: 'Commercial Shopping Complex', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%205%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 3, title: 'Industrial Warehouse Facility', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%2011%20Industrial.PNG?raw=true', category: 'Industrial' },
+    { id: 4, title: 'University Administration Block', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%203%20Learning%20Institutions.PNG?raw=true', category: 'Learning Institutions' },
+    { id: 5, title: 'Luxury Family Home', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%202%20Residential.PNG?raw=true', category: 'Residential' },
+    { id: 6, title: 'Office Complex Downtown', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%206%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 7, title: 'Manufacturing Plant', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%204%20Industrial.PNG?raw=true', category: 'Industrial' },
+    { id: 8, title: 'Primary School Buildings', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%208%20Learning%20Institution.PNG?raw=true', category: 'Learning Institutions' },
+    { id: 9, title: 'Housing Estate Development', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%2010%20Construction.PNG?raw=true', category: 'Construction' },
+    { id: 10, title: 'Retail Shopping Mall', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%209%20Commercial.PNG?raw=true', category: 'Commercial' },
+    { id: 11, title: 'Technical College Campus', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%207%20Residential.PNG?raw=true', category: 'Residential' },
+    { id: 12, title: 'Mixed-Use Development', image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Portfolio%20Residential.PNG?raw=true', category: 'Residential' }
   ];
 
   const categories = ['All', 'Residential', 'Commercial', 'Industrial', 'Learning Institutions', 'Construction'];
