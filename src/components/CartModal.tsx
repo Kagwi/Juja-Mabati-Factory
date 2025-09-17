@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import { X, Plus, Minus, Trash2, ShoppingCart, MessageCircle, Mail } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { Link } from 'react-router-dom';
@@ -24,8 +24,14 @@ const CartModal: React.FC<CartModalProps> = ({ isOpen, onClose }) => {
     const message = getCartMessage();
     const subject = encodeURIComponent('Product Inquiry - Juja Mabati Factory');
     const body = encodeURIComponent(message);
+
+    // Open default email client
     window.location.href = `mailto:jujamabatifactoryltd@gmail.com?subject=${subject}&body=${body}`;
-    onClose();
+
+    // Delay closing the modal slightly so it doesn't interfere
+    setTimeout(() => {
+      onClose();
+    }, 500);
   };
 
   return (
