@@ -4,34 +4,29 @@ import { CheckCircle, Star, Award, Users, Scissors } from 'lucide-react';
 const BrandPage = () => {
   const brandAmbassadors = [
     {
-      name: 'Jennifer Wairimu',
-      title: 'Residential Roofing Specialist',
-      image: 'https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
+      name: 'Ndegenye',
+      title: 'Our Brand Ambassador',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Ndegenye.PNG?raw=true'
     },
     {
-      name: 'David Kimani',
-      title: 'Commercial Construction Manager',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
+      name: 'Baba Talisha',
+      title: 'Our Brand Ambassador',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Ndegenye.PNG?raw=true'
     },
     {
-      name: 'Grace Muthoni',
-      title: 'Interior Design Consultant',
-      image: 'https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
+      name: 'Damaris Wa Dama Spares',
+      title: 'Brand Ambassador',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Damaris%20wa%20Dama%20Spares.PNG?raw=true'
     },
     {
-      name: 'Peter Njuguna',
-      title: 'Independent Contractor',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
+      name: 'Trizah Mamake Muraya',
+      title: 'Brand Ambassador',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Triza%20Mamake%20Muraya.PNG?raw=true'
     },
     {
-      name: 'Mary Wanjiku',
-      title: 'Architect & Building Designer',
-      image: 'https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
-    },
-    {
-      name: 'Samuel Kariuki',
-      title: 'Property Developer',
-      image: 'https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop'
+      name: 'Uria Wari Cukura wa Nairobi',
+      title: 'Brand Ambassador',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Uria%20Wari%20Cukura%20ya%20Nairobi.PNG?raw=true'
     }
   ];
 
