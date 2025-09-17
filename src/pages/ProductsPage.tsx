@@ -70,7 +70,7 @@ const ProductsPage = () => {
     {
       name: 'Decra Stone Coated',
       id: 'decra-stone-coated',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Decra%20Stone%20Coated%20Iron%20Sheets.PNG?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Decra.png?raw=true',
       variants: [
         { type: 'Matte', gauge: 26, price: 720 },
         { type: 'Matte', gauge: 28, price: 680 }
@@ -79,7 +79,7 @@ const ProductsPage = () => {
     {
       name: 'Corrugated/Normal Sheets',
       id: 'corrugated-sheets',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Corrugated%20Sheets.PNG?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Corrugated_Shiny%20Iron%20Sheets_remix_01k5ba7tdmfqh8bh2mqr8843gd.png?raw=true',
       variants: [
         { type: 'Colored', gauge: 30, price: 450 },
         { type: 'Colored', gauge: 28, price: 600 },
@@ -90,7 +90,7 @@ const ProductsPage = () => {
     {
       name: 'Rolltops',
       id: 'rolltops',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rolltops.PNG?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Rolltops.png?raw=true',
       variants: [
         { type: 'Standard', gauge: 30, price: 600, unit: 'per piece' },
         { type: 'Glossy', gauge: 30, price: 450, unit: 'per piece' }
@@ -99,7 +99,7 @@ const ProductsPage = () => {
     {
       name: 'Roofing Nails',
       id: 'roofing nails',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Roofing%20Nails.PNG?raw=true',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Nails.png?raw=true',
       variants: [
         { type: 'Normal Silver', price: 250, unit: 'per kg' },
         { type: 'Colored', price: 600, unit: 'per kg' }
