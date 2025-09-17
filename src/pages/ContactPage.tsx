@@ -24,7 +24,15 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
+
+    // Construct mailto link
+    const subject = encodeURIComponent("New Inquiry from Website");
+    const body = encodeURIComponent(
+      `Full Name: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:jujamabatifactoryltd@gmail.com?subject=${subject}&body=${body}`;
+
+    // Reset form after sending
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -87,7 +95,7 @@ const ContactPage = () => {
                 <div className="text-center py-12">
                   <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4 animate-bounce" />
                   <h3 className="text-2xl font-bold text-green-600 mb-2">Message Sent!</h3>
-                  <p className="text-gray-600">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                  <p className="text-gray-600">Your email client should open. Thank you for contacting us!</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -184,12 +192,12 @@ const ContactPage = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-amber-100 hover:scale-125 hover:rotate-12 transition-all duration-300">
-                      <MapPin className="h-6 w-6 text-red-600 hover:text-amber-500 hover:scale-110 transition-all duration-300" />
+                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-red-600 hover:scale-105 transition-all duration-300">Our Location</h3>
-                      <p className="text-gray-600 leading-relaxed hover:text-gray-800 hover:scale-105 transition-all duration-300">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Location</h3>
+                      <p className="text-gray-600 leading-relaxed">
                         Kenyatta Road next to Homeway Supermarket<br />
                         near Juja Town, Nairobi<br />
                         P.O. Box 57920 Nairobi
@@ -198,32 +206,32 @@ const ContactPage = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-amber-100 hover:scale-125 hover:rotate-12 transition-all duration-300">
-                      <Phone className="h-6 w-6 text-red-600 hover:text-amber-500 hover:scale-110 transition-all duration-300" />
+                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-red-600 hover:scale-105 transition-all duration-300">Phone</h3>
-                      <p className="text-gray-600 text-lg hover:text-gray-800 hover:scale-105 transition-all duration-300">0769 600 200</p>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                      <p className="text-gray-600 text-lg">0769 600 200</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-amber-100 hover:scale-125 hover:rotate-12 transition-all duration-300">
-                      <Mail className="h-6 w-6 text-red-600 hover:text-amber-500 hover:scale-110 transition-all duration-300" />
+                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-red-600 hover:scale-105 transition-all duration-300">Email</h3>
-                      <p className="text-gray-600 hover:text-gray-800 hover:scale-105 transition-all duration-300">jujamabatifactoryltd@gmail.com</p>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                      <p className="text-gray-600">jujamabatifactoryltd@gmail.com</p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 hover:bg-amber-100 hover:scale-125 hover:rotate-12 transition-all duration-300">
-                      <Clock className="h-6 w-6 text-red-600 hover:text-amber-500 hover:scale-110 transition-all duration-300" />
+                    <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-red-600 hover:scale-105 transition-all duration-300">Business Hours</h3>
-                      <div className="text-gray-600 hover:text-gray-800 hover:scale-105 transition-all duration-300">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
+                      <div className="text-gray-600">
                         <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
                         <p>Saturday: 8:00 AM - 4:00 PM</p>
                         <p>Sunday: Closed</p>
@@ -235,35 +243,35 @@ const ContactPage = () => {
 
               {/* Live WhatsApp Chat */}
               <div className="bg-green-50 border-2 border-green-200 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-green-800 mb-4 hover:text-green-600 hover:scale-105 transition-all duration-300">Live WhatsApp Chat</h3>
-                <p className="text-green-700 mb-6 leading-relaxed hover:text-green-600 hover:scale-105 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-green-800 mb-4">Live WhatsApp Chat</h3>
+                <p className="text-green-700 mb-6 leading-relaxed">
                   Need immediate assistance? Chat with us directly on WhatsApp 
                   for instant responses to your queries.
                 </p>
                 <button
                   onClick={handleWhatsAppClick}
-                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:rotate-1 flex items-center space-x-2"
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2"
                 >
-                  <MessageCircle className="h-5 w-5 hover:scale-110 hover:rotate-12 transition-all duration-300" />
+                  <MessageCircle className="h-5 w-5" />
                   <span>Start WhatsApp Chat</span>
                 </button>
               </div>
 
               {/* Response Time */}
               <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-amber-800 mb-4 hover:text-amber-600 hover:scale-105 transition-all duration-300">Response Guarantee</h3>
+                <h3 className="text-xl font-bold text-amber-800 mb-4">Response Guarantee</h3>
                 <div className="space-y-3 text-amber-700">
                   <p className="flex items-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-amber-600 hover:text-amber-500 hover:scale-125 hover:rotate-12 transition-all duration-300" />
-                    <span className="hover:text-amber-600 hover:scale-105 transition-all duration-300">Email responses within 24 hours</span>
+                    <CheckCircle className="h-5 w-5 text-amber-600" />
+                    <span>Email responses within 24 hours</span>
                   </p>
                   <p className="flex items-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-amber-600 hover:text-amber-500 hover:scale-125 hover:rotate-12 transition-all duration-300" />
-                    <span className="hover:text-amber-600 hover:scale-105 transition-all duration-300">WhatsApp responses within 2 hours</span>
+                    <CheckCircle className="h-5 w-5 text-amber-600" />
+                    <span>WhatsApp responses within 2 hours</span>
                   </p>
                   <p className="flex items-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-amber-600 hover:text-amber-500 hover:scale-125 hover:rotate-12 transition-all duration-300" />
-                    <span className="hover:text-amber-600 hover:scale-105 transition-all duration-300">Phone calls answered during business hours</span>
+                    <CheckCircle className="h-5 w-5 text-amber-600" />
+                    <span>Phone calls answered during business hours</span>
                   </p>
                 </div>
               </div>
