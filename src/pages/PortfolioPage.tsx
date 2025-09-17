@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Play, X } from 'lucide-react';
 
 const PortfolioPage = () => {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const videoModalRef = useRef<HTMLDivElement>(null);
+  const imageModalRef = useRef<HTMLDivElement>(null);
 
   const videos = [
     {
@@ -57,6 +59,26 @@ const PortfolioPage = () => {
   const filteredImages = selectedCategory === 'All'
     ? projectImages
     : projectImages.filter(img => img.category === selectedCategory);
+
+  // Close modal when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (videoModalRef.current && !videoModalRef.current.contains(event.target as Node)) {
+        setSelectedVideo(null);
+      }
+      if (imageModalRef.current && !imageModalRef.current.contains(event.target as Node)) {
+        setSelectedImage(null);
+      }
+    };
+    if (selectedVideo || selectedImage) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [selectedVideo, selectedImage]);
 
   const handleVideoClick = (videoUrl: string) => setSelectedVideo(videoUrl);
   const handleImageClick = (imageUrl: string) => setSelectedImage(imageUrl);
@@ -189,7 +211,7 @@ const PortfolioPage = () => {
       {/* Video Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-4xl w-full">
+          <div ref={videoModalRef} className="relative max-w-4xl w-full">
             <button
               onClick={() => setSelectedVideo(null)}
               className="absolute -top-12 right-0 text-white hover:text-red-400 transition-colors"
@@ -209,7 +231,7 @@ const PortfolioPage = () => {
       {/* Image Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-4xl w-full">
+          <div ref={imageModalRef} className="relative max-w-4xl w-full">
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute -top-12 right-0 text-white hover:text-red-400 transition-colors"
