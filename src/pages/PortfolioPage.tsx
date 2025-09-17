@@ -10,15 +10,15 @@ const PortfolioPage = () => {
     {
       id: 1,
       title: 'Box Profile Manufacturing Process',
-      thumbnail: 'https://images.pexels.com/photos/162360/pexels-photo-162360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Corrugated%20Sheets.mp4',
+      thumbnail: '',
+      videoUrl: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/06322e818913b497fcbc6a650651f9a2c49abc47/public/Boxprofile.mp4',
       description: 'Behind-the-scenes look at our state-of-the-art box profile manufacturing process'
     },
     {
       id: 2,
-      title: 'Stone Coated Roofing Production',
-      thumbnail: 'https://images.pexels.com/photos/1396119/pexels-photo-1396119.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      videoUrl: '#',
+      title: 'Corrugated Roofing Sheets Production',
+      thumbnail: '',
+      videoUrl: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Corrugated%20Sheets.mp4',
       description: 'Detailed overview of our premium stone coated roofing production line'
     },
     {
