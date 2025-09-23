@@ -143,7 +143,6 @@ const Footer = () => {
               Powered by Neonsol Creatives
             </a>
           </p>
-        </div>
       </div>
     </footer>
   );
