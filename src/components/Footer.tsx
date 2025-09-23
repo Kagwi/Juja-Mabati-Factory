@@ -138,12 +138,12 @@ const Footer = () => {
               © {currentYear} Juja Mabati Factory. All Rights Reserved.
             </p>
             <p className="text-gray-300 text-sm">
-              Created & Designed by{" "}
+              Created & Designed by{' '}
               <a
                 href="https://www.neonsolcreatives.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-amber-400 font-semibold underline hover:text-yellow-300 hover:scale-110 transition-all duration-300"
+                className="text-amber-400 hover:text-yellow-300 hover:scale-105 transition-all duration-300 hover:underline hover:shadow-lg"
               >
                 Neonsol Creatives
               </a>
