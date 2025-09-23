@@ -27,40 +27,46 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'Gakuru Muraguri',
+      name: 'Mr. JosephGakuru',
       position: 'Chief Executive Officer',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
-      description: 'With over 15 years of experience in the roofing industry, James has led Juja Mabati Factory to become Kenya\'s premier roofing manufacturer. His vision for innovation and quality has driven the company\'s growth from a small local business to a nationwide leader. Under his leadership, the company has maintained its commitment to excellence while expanding its product range and market reach. James is passionate about sustainable building solutions and delivering quality roofing solutions to every customer.'
+      description: 'As CEO, Mr. Gakuru provides overall strategic direction and leadership for Juja Mabati. With a strong vision for growth and innovation, he oversees the company’s business operations, expansion plans, and community partnerships. He is passionate about delivering quality products that meet international standards while also creating sustainable impact in local communities. Under his leadership, Juja Mabati has become a trusted brand in Kenya and beyond, known for reliability, excellence, and innovation.
+'
     },
     {
-      name: 'Mercy',
+      name: 'Ms. Mercy Kingori',
       position: 'Marketing Manager',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Mercy.jpg?raw=true',
-      description: 'Oversees all production processes ensuring quality standards.'
+      description: 'Ms. Kingori heads the Marketing Department with creativity and focus. She is responsible for brand positioning, promotional campaigns, and customer engagement across all platforms. Her role is central to ensuring that the company remains connected to its customers through effective advertising, social media presence, and corporate events. She also builds relationships with contractors, schools, NGOs, and distributors, ensuring that Juja Mabati continues to expand its reach while staying true to its promise of “The Forever Mabati”'
+'
     },
     {
       name: 'Sally',
-      position: 'Customer Care Representative',
+      position: 'Secretary',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Sally.jpg?raw=true',
-      description: 'Leads our sales team and manages customer relationships nationwide.'
+      description: 'Ms. Mahuro plays a key administrative role within the company. She manages office correspondence, schedules, and records, while providing essential support to the executive team. Known for her professionalism and attention to detail, she ensures smooth communication and coordination across departments. Her organizational skills keep the company running efficiently, making her an integral part of daily operations.
+'
     },
     {
-      name: 'Mwangi',
-      position: 'Company Driver',
+      name: 'Mr. Martin Kamau',
+      position: 'Dispatch Manager',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Company%20Driver.jpg?raw=true',
-      description: 'Ensures every product meets our strict quality standards.'
+      description: 'Mr. Kamau oversees dispatch and logistics, ensuring that all roofing products are delivered to customers accurately and on schedule. He coordinates order preparation, supervises the loading process, and manages distribution routes for maximum efficiency. His role guarantees that clients receive their Mabati sheets in excellent condition, whether for small home projects or large-scale construction. By maintaining order accuracy and timely deliveries, he upholds the company’s reputation for reliability.'
+'
     },
     {
-      name: 'Daniel & Ochieng',
-      position: 'Dispatch Officials',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Dispatch%20Team.jpg?raw=true',
-      description: 'Provides technical expertise and product development.'
+      name: 'Mr. Mathew Nyabuto',
+      position: 'Production Manager',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Mathew%20Nyabuto.PNG',
+      description: 'Mr. Nyabuto leads the production team, ensuring that Juja Mabati’s roofing sheets are manufactured to the highest quality standards. He oversees machine operations, monitors production targets, and implements safety and quality control measures. With his experience in manufacturing processes, he ensures that every product leaving the factory meets customer expectations. He is also responsible for training staff, improving efficiency, and maintaining a smooth production flow.'
+'
     },
     {
-      name: 'Sarah Akinyi',
-      position: 'Dispatch Official',
-      image: 'https://images.pexels.com/photos/3727465/pexels-photo-3727465.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      description: 'Ensures exceptional customer service and satisfaction.'
+      name: 'Mr. Gerald Simiyu',
+      position: 'Assistant Production Manager',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Simiyu.PNG',
+      description: 'Mr. Simiyu works closely with the Production Manager to oversee day-to-day operations in the factory. He ensures compliance with production schedules, monitors quality, and provides hands-on supervision to the technical team. His role bridges management and operations, ensuring that production goals are met without compromising on safety or quality. He is dedicated to continuous improvement and innovation within the factory.'
+'
     }
   ];
 
