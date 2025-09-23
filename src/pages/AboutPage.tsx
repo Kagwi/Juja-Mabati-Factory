@@ -31,7 +31,6 @@ const AboutPage = () => {
       position: 'Chief Executive Officer',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
       description: 'As CEO, Mr. Gakuru provides overall strategic direction and leadership for Juja Mabati. With a strong vision for growth and innovation, he oversees the company’s business operations, expansion plans, and community partnerships. He is passionate about delivering quality products that meet international standards while also creating sustainable impact in local communities. Under his leadership, Juja Mabati has become a trusted brand in Kenya and beyond, known for reliability, excellence, and innovation.'
-'
     },
     {
       name: 'Ms. Mercy Kingori',
