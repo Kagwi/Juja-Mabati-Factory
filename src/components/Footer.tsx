@@ -131,24 +131,18 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm mb-4 md:mb-0">
-              © {currentYear} Juja Mabati Factory. All Rights Reserved.
-            </p>
-            <p className="text-gray-300 text-sm">
-              Created & Designed by{' '}
-              <a
-                href="https://www.neonsolcreatives.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-amber-400 hover:text-yellow-300 hover:scale-105 transition-all duration-300 hover:underline hover:shadow-lg"
-              >
-                Neonsol Creatives
-              </a>
-            </p>
-          </div>
+      <div className="border-t border-stone-700 mt-8 pt-6 text-center">
+          <p>&copy; {new Date().getFullYear()} Juja Mabati Factory Ltd. All rights reserved.</p>
+          <p className="mt-2 text-sm">
+            <a
+              href="https://www.neosolcreatives.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:text-emerald-600 transition-colors"
+            >
+              Powered by Neonsol Creatives
+            </a>
+          </p>
         </div>
       </div>
     </footer>
