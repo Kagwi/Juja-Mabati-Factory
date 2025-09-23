@@ -27,10 +27,10 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'Mr. JosephGakuru',
+      name: 'Mr. Joseph Gakuru',
       position: 'Chief Executive Officer',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
-      description: 'As CEO, Mr. Gakuru provides overall strategic direction and leadership for Juja Mabati. With a strong vision for growth and innovation, he oversees the company’s business operations, expansion plans, and community partnerships. He is passionate about delivering quality products that meet international standards while also creating sustainable impact in local communities. Under his leadership, Juja Mabati has become a trusted brand in Kenya and beyond, known for reliability, excellence, and innovation.
+      description: 'As CEO, Mr. Gakuru provides overall strategic direction and leadership for Juja Mabati. With a strong vision for growth and innovation, he oversees the company’s business operations, expansion plans, and community partnerships. He is passionate about delivering quality products that meet international standards while also creating sustainable impact in local communities. Under his leadership, Juja Mabati has become a trusted brand in Kenya and beyond, known for reliability, excellence, and innovation.'
 '
     },
     {
@@ -41,10 +41,10 @@ const AboutPage = () => {
 '
     },
     {
-      name: 'Sally',
+      name: 'Ms. Sandra Mahuro',
       position: 'Secretary',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Sally.jpg?raw=true',
-      description: 'Ms. Mahuro plays a key administrative role within the company. She manages office correspondence, schedules, and records, while providing essential support to the executive team. Known for her professionalism and attention to detail, she ensures smooth communication and coordination across departments. Her organizational skills keep the company running efficiently, making her an integral part of daily operations.
+      description: 'Ms. Mahuro plays a key administrative role within the company. She manages office correspondence, schedules, and records, while providing essential support to the executive team. Known for her professionalism and attention to detail, she ensures smooth communication and coordination across departments. Her organizational skills keep the company running efficiently, making her an integral part of daily operations.'
 '
     },
     {
