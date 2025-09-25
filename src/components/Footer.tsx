@@ -130,9 +130,13 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar with Solid Dark-Blue Background */}
-      <div className="bg-blue-900 border-t border-blue-800 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 py-6">
+      {/* Bottom Bar with Gradient Fade */}
+      <div className="relative z-10">
+        {/* Gradient overlay at the bottom */}
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-blue-900 to-transparent"></div>
+        
+        {/* Content on top of gradient */}
+        <div className="max-w-7xl mx-auto px-4 py-6 relative z-20">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-200 text-sm mb-4 md:mb-0">
               © {currentYear} Juja Mabati Factory. All Rights Reserved.
