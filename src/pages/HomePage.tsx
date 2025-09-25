@@ -202,14 +202,14 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
               <img
-                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Award1.jpg?raw=true"
+                src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                 alt="Real Estate Award Recognition"
                 className="w-full h-80 object-cover"
               />
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
               <img
-                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Award2.jpg?raw=true"
+                src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                 alt="Commitment to Client Satisfaction Award"
                 className="w-full h-80 object-cover"
               />
