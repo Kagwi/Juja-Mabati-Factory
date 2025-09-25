@@ -204,14 +204,14 @@ const HomePage = () => {
               <img
                 src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                 alt="Real Estate Award Recognition"
-                className="w-full h-80 object-top"
+                className="w-full h-100 object-cover"
               />
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
               <img
                 src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                 alt="Commitment to Client Satisfaction Award"
-                className="w-full h-80 object-top"
+                className="w-full h-100 object-cover"
               />
             </div>
           </div>
