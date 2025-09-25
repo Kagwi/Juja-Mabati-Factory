@@ -10,9 +10,9 @@ const Footer = () => {
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <img
-          src=""
+          src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
           alt="Roofing background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-top"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
