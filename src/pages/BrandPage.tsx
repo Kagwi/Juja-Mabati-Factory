@@ -30,7 +30,6 @@ const BrandPage = () => {
     }
   ];
 
-  // ✅ Use real logo URLs instead of text
   const partnerLogos = [
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Dama%20Spares%20Logo.PNG',
     'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/EPZ%20Logo.PNG',
@@ -202,7 +201,7 @@ const BrandPage = () => {
         </div>
       </section>
 
-      {/* Partners Section */}
+      {/* Partners Section (FIXED for phones) */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -212,16 +211,16 @@ const BrandPage = () => {
             </p>
           </div>
           <div className="overflow-hidden">
-            <div className="flex animate-marquee space-x-12 py-8 hover:pause">
+            <div className="flex animate-marquee space-x-6 py-8 hover:pause">
               {[...partnerLogos, ...partnerLogos].map((logo, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 bg-white rounded-lg shadow-md hover:shadow-2xl hover:scale-110 hover:-translate-y-2 hover:bg-yellow-50 transition-all duration-300 px-8 py-6 min-w-[200px] text-center"
+                  className="flex-shrink-0 bg-white rounded-lg shadow-md hover:shadow-2xl hover:scale-110 hover:-translate-y-2 hover:bg-yellow-50 transition-all duration-300 px-4 py-6 min-w-[120px] text-center"
                 >
                   <img
                     src={logo}
                     alt={`Partner logo ${index + 1}`}
-                    className="h-16 object-contain mx-auto"
+                    className="h-12 object-contain mx-auto"
                   />
                 </div>
               ))}
