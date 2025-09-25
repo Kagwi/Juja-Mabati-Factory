@@ -188,6 +188,36 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Achievements & Awards Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Achievements & Awards</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Juja Mabati was recognized by the esteemed Real Estate Awards as the most dependable 
+              roofing solutions providers in 2025 — an award showing our commitment to client satisfaction.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Award1.jpg?raw=true"
+                alt="Real Estate Award Recognition"
+                className="w-full h-80 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Award2.jpg?raw=true"
+                alt="Commitment to Client Satisfaction Award"
+                className="w-full h-80 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-20 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4">
