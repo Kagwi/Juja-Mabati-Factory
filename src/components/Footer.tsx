@@ -12,7 +12,7 @@ const Footer = () => {
         <img
           src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
           alt="Roofing background"
-          className="w-full h-full object-top"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
@@ -130,14 +130,14 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      {/* Bottom Bar with Solid Dark-Blue Background */}
+      <div className="bg-blue-900 border-t border-blue-800 relative z-10">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm mb-4 md:mb-0">
+            <p className="text-gray-200 text-sm mb-4 md:mb-0">
               © {currentYear} Juja Mabati Factory. All Rights Reserved.
             </p>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Created & Designed by{' '}
               <a
                 href="https://www.neonsolcreatives.com"
