@@ -27,7 +27,7 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'Mr. Joseph Gakuru',
+      name: 'Mr. Gakuru Muraguri',
       position: 'Chief Executive Officer',
       image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Gakuru.jpg?raw=true',
       description: 'As CEO, Mr. Gakuru provides overall strategic direction and leadership for Juja Mabati. With a strong vision for growth and innovation, he oversees the company’s business operations, expansion plans, and community partnerships. He is passionate about delivering quality products that meet international standards while also creating sustainable impact in local communities. Under his leadership, Juja Mabati has become a trusted brand in Kenya and beyond, known for reliability, excellence, and innovation.'
@@ -53,13 +53,13 @@ const AboutPage = () => {
     {
       name: 'Mr. Mathew Nyabuto',
       position: 'Production Manager',
-      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Mathew%20Nyabuto.PNG',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Nyabuto.PNG',
       description: 'Mr. Nyabuto leads the production team, ensuring that Juja Mabati’s roofing sheets are manufactured to the highest quality standards. He oversees machine operations, monitors production targets, and implements safety and quality control measures. With his experience in manufacturing processes, he ensures that every product leaving the factory meets customer expectations. He is also responsible for training staff, improving efficiency, and maintaining a smooth production flow.'
     },
     {
       name: 'Mr. Gerald Simiyu',
       position: 'Assistant Production Manager',
-      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Simiyu.PNG',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Simiyu.PNG',
       description: 'Mr. Simiyu works closely with the Production Manager to oversee day-to-day operations in the factory. He ensures compliance with production schedules, monitors quality, and provides hands-on supervision to the technical team. His role bridges management and operations, ensuring that production goals are met without compromising on safety or quality. He is dedicated to continuous improvement and innovation within the factory.'
     }
   ];
