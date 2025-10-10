@@ -14,19 +14,9 @@ const BrandPage = () => {
       image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Baba%20Talisha.PNG?raw=true'
     },
     {
-      name: 'Damaris Wa Dama Spares',
-      title: 'Brand Ambassador',
-      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Damaris%20wa%20Dama%20Spares.PNG'
-    },
-    {
       name: 'Trizah Mamake Muraya',
       title: 'Brand Ambassador',
       image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Triza%20Mamake%20Muraya.PNG'
-    },
-    {
-      name: 'Uria Wari Cukura wa Nairobi',
-      title: 'Brand Ambassador',
-      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/main/public/Uria%20Wari%20Cukura%20ya%20Nairobi.PNG'
     }
   ];
 
