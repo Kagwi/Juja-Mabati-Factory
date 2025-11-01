@@ -45,12 +45,6 @@ const AboutPage = () => {
       description: 'Ms. Mahuro plays a key administrative role within the company. She manages office correspondence, schedules, and records, while providing essential support to the executive team. Known for her professionalism and attention to detail, she ensures smooth communication and coordination across departments. Her organizational skills keep the company running efficiently, making her an integral part of daily operations.'
     },
     {
-      name: 'Mr. Martin Kamau',
-      position: 'Dispatch Manager',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Company%20Driver.jpg?raw=true',
-      description: 'Mr. Kamau oversees dispatch and logistics, ensuring that all roofing products are delivered to customers accurately and on schedule. He coordinates order preparation, supervises the loading process, and manages distribution routes for maximum efficiency. His role guarantees that clients receive their Mabati sheets in excellent condition, whether for small home projects or large-scale construction. By maintaining order accuracy and timely deliveries, he upholds the company’s reputation for reliability.'
-    },
-    {
       name: 'Mr. Mathew Nyabuto',
       position: 'Production Manager',
       image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Nyabuto.PNG',
