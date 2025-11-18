@@ -194,24 +194,40 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Achievements & Awards</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Juja Mabati was recognized by the esteemed Real Estate Awards as the most dependable 
-              roofing solutions providers in 2025 - an award showing our commitment to client satisfaction.
+              Juja Mabati has been recognized for excellence in the roofing industry. We were honored at the 
+              Starbrands East Africa Awards where we won the Award for Most Quality and Affordable Seller of Iron Sheets, 
+              and by the esteemed Real Estate Awards as the most dependable roofing solutions provider - awards 
+              demonstrating our commitment to client satisfaction and quality service.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
               <img
                 src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                 alt="Real Estate Award Recognition"
-                className="w-full h-100 object-cover"
+                className="w-full h-64 object-cover"
               />
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
               <img
                 src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                 alt="Commitment to Client Satisfaction Award"
-                className="w-full h-100 object-cover"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/S_brands.PNG"
+                alt="Starbrands East Africa Award for Most Quality and Affordable Seller of Iron Sheets"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/Sbrands%200.PNG"
+                alt="Starbrands East Africa Excellence Award"
+                className="w-full h-64 object-cover"
               />
             </div>
           </div>
