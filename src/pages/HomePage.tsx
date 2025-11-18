@@ -89,27 +89,27 @@ const HomePage = () => {
               index < currentSlide ? '-translate-x-full' : 'translate-x-full'
             }`}
           >
-            <div className="relative h-full">
+            <div className="relative h-full w-full">
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover min-w-full min-h-full"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white max-w-4xl px-4">
-                  <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                  <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slide-down">
                     <span className="inline-block animate-bounce">The</span>{' '}
                     <span className="inline-block animate-pulse">Forever</span>{' '}
                     <span className="inline-block animate-wiggle">Mabati</span>
                   </h2>
-                  <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                  <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-slide-up">
                     Leading Kenyan roofing manufacturer specializing in durable, reliable, and aesthetically pleasing roofing materials
                   </p>
-                  <div className="bg-red-600 text-white py-4 px-8 rounded-lg inline-block mb-8 text-lg font-semibold">
+                  <div className="bg-red-600 text-white py-4 px-8 rounded-lg inline-block mb-8 text-lg font-semibold animate-slide-up">
                     All Our Roofs have a 15-years Fade-Free Warranty
                   </div>
-                  <div className="space-x-4">
+                  <div className="space-x-4 animate-slide-up">
                     <Link
                       to="/products"
                       className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:rotate-1 shadow-lg inline-block"
@@ -161,10 +161,10 @@ const HomePage = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-slide-down">
               Why Choose Juja Mabati Factory?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
               We are Kenya's leading roofing manufacturer, committed to delivering quality, 
               reliability, and excellence in every sheet we produce.
             </p>
@@ -180,8 +180,8 @@ const HomePage = () => {
                 <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-100 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500">
                   <feature.icon className="h-8 w-8 text-red-600 group-hover:text-amber-500 group-hover:scale-125 transition-all duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">{feature.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 animate-slide-down">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 animate-slide-up">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -192,8 +192,8 @@ const HomePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Achievements & Awards</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-slide-down">Achievements & Awards</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
               Our commitment to excellence has been recognized through various prestigious awards 
               and industry acknowledgments.
             </p>
@@ -202,24 +202,24 @@ const HomePage = () => {
           {/* Real Estate Awards Section */}
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-slide-down">
                 Real Estate Awards Recognition
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
                 Juja Mabati was recognized by the esteemed Real Estate Awards as the most dependable 
                 roofing solutions provider in 2025 - an award showing our commitment to client satisfaction.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                   alt="Real Estate Award Recognition"
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up" style={{animationDelay: '0.1s'}}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                   alt="Commitment to Client Satisfaction Award"
@@ -232,10 +232,10 @@ const HomePage = () => {
           {/* Starbrands Awards Section */}
           <div>
             <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-slide-down">
                 Starbrands East Africa Awards
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
                 We are proud to announce that Juja Mabati won the prestigious Starbrands East Africa Award 
                 for Most Quality and Affordable Seller of Iron Sheets, recognizing our commitment to providing 
                 high-quality roofing solutions at accessible prices.
@@ -243,14 +243,14 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/S_brands.PNG"
                   alt="Starbrands East Africa Award for Most Quality and Affordable Seller of Iron Sheets"
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up" style={{animationDelay: '0.1s'}}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/Sbrands%200.PNG"
                   alt="Starbrands East Africa Excellence Award"
@@ -266,15 +266,15 @@ const HomePage = () => {
       <section className="py-20 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Customer Satisfaction</h2>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-down">Customer Satisfaction</h2>
+            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed animate-slide-up">
               Join thousands of satisfied customers who trust Juja Mabati Factory 
               for their roofing needs across Kenya.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group">
+            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
@@ -295,7 +295,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group">
+            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up" style={{animationDelay: '0.1s'}}>
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
@@ -316,7 +316,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group">
+            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up" style={{animationDelay: '0.2s'}}>
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
@@ -339,7 +339,7 @@ const HomePage = () => {
           </div>
 
           <div className="text-center mt-16">
-            <div className="bg-white bg-opacity-10 inline-block px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 transition-all duration-300 group">
+            <div className="bg-white bg-opacity-10 inline-block px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 transition-all duration-300 group animate-slide-up">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-6 w-6 text-amber-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
                 <span className="text-xl font-semibold group-hover:text-amber-300 transition-colors duration-300">Customer Satisfaction 100% Guaranteed</span>
@@ -352,14 +352,14 @@ const HomePage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-down">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-10 leading-relaxed opacity-90">
+          <p className="text-xl mb-10 leading-relaxed opacity-90 animate-slide-up">
             Contact us today for a free consultation and quote. 
             Let us help you find the perfect roofing solution for your project.
           </p>
-          <div className="space-x-4">
+          <div className="space-x-4 animate-slide-up">
             <Link
               to="/contact"
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:rotate-1 shadow-lg inline-block"
@@ -375,6 +375,39 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Add CSS for animations */}
+      <style jsx>{`
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-slide-down {
+          animation: slideDown 0.8s ease-out forwards;
+        }
+        
+        .animate-slide-up {
+          animation: slideUp 0.8s ease-out forwards;
+        }
+      `}</style>
     </div>
   );
 };
