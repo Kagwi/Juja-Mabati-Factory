@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Shield, Truck, Users, Award, Star, CheckCircle } from 'lucide-react';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [animatedSections, setAnimatedSections] = useState(new Set());
+  const sectionRefs = useRef({});
 
   const slides = [
     {
@@ -69,6 +71,28 @@ const HomePage = () => {
     return () => clearInterval(timer);
   }, [slides.length]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animatedSections.has(entry.target.id)) {
+            setAnimatedSections(prev => new Set(prev).add(entry.target.id));
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    Object.values(sectionRefs.current).forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, [animatedSections]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -76,6 +100,12 @@ const HomePage = () => {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
+
+  const setRef = (id) => (el) => {
+    sectionRefs.current[id] = el;
+  };
+
+  const isAnimated = (id) => animatedSections.has(id);
 
   return (
     <div className="pt-24">
@@ -158,13 +188,23 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section 
+        id="features" 
+        ref={setRef('features')}
+        className={`py-20 bg-gray-50 transition-all duration-1000 ${
+          isAnimated('features') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-slide-down">
+            <h2 className={`text-4xl md:text-5xl font-bold text-gray-900 mb-6 transition-all duration-700 delay-200 ${
+              isAnimated('features') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+            }`}>
               Why Choose Juja Mabati Factory?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+            <p className={`text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${
+              isAnimated('features') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+            }`}>
               We are Kenya's leading roofing manufacturer, committed to delivering quality, 
               reliability, and excellence in every sheet we produce.
             </p>
@@ -174,14 +214,23 @@ const HomePage = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-4 group animate-float"
-                style={{animationDelay: `${index * 0.2}s`}}
+                className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 hover:-translate-y-4 group ${
+                  isAnimated('features') ? 'animate-float' : 'opacity-0'
+                }`}
+                style={{
+                  animationDelay: isAnimated('features') ? `${index * 0.2}s` : '0s',
+                  transitionDelay: isAnimated('features') ? `${index * 0.1}s` : '0s'
+                }}
               >
                 <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-100 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500">
                   <feature.icon className="h-8 w-8 text-red-600 group-hover:text-amber-500 group-hover:scale-125 transition-all duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 animate-slide-down">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 animate-slide-up">{feature.description}</p>
+                <h3 className={`text-xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300 ${
+                  isAnimated('features') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+                }`}>{feature.title}</h3>
+                <p className={`text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300 ${
+                  isAnimated('features') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+                }`}>{feature.description}</p>
               </div>
             ))}
           </div>
@@ -189,11 +238,21 @@ const HomePage = () => {
       </section>
 
       {/* Achievements & Awards Section */}
-      <section className="py-20 bg-white">
+      <section 
+        id="achievements" 
+        ref={setRef('achievements')}
+        className={`py-20 bg-white transition-all duration-1000 ${
+          isAnimated('achievements') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-slide-down">Achievements & Awards</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+            <h2 className={`text-4xl md:text-5xl font-bold text-gray-900 mb-6 transition-all duration-700 delay-200 ${
+              isAnimated('achievements') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+            }`}>Achievements & Awards</h2>
+            <p className={`text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${
+              isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+            }`}>
               Our commitment to excellence has been recognized through various prestigious awards 
               and industry acknowledgments.
             </p>
@@ -202,24 +261,32 @@ const HomePage = () => {
           {/* Real Estate Awards Section */}
           <div className="mb-16">
             <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-slide-down">
+              <h3 className={`text-3xl md:text-4xl font-bold text-gray-800 mb-4 transition-all duration-700 delay-400 ${
+                isAnimated('achievements') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+              }`}>
                 Real Estate Awards Recognition
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+              <p className={`text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-500 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 Juja Mabati was recognized by the esteemed Real Estate Awards as the most dependable 
                 roofing solutions provider in 2025 - an award showing our commitment to client satisfaction.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up">
+              <div className={`rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 transition-all duration-700 delay-600 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                   alt="Real Estate Award Recognition"
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              <div className={`rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 transition-all duration-700 delay-700 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                   alt="Commitment to Client Satisfaction Award"
@@ -232,10 +299,14 @@ const HomePage = () => {
           {/* Starbrands Awards Section */}
           <div>
             <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 animate-slide-down">
+              <h3 className={`text-3xl md:text-4xl font-bold text-gray-800 mb-4 transition-all duration-700 delay-800 ${
+                isAnimated('achievements') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+              }`}>
                 Starbrands East Africa Awards
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+              <p className={`text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-900 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 We are proud to announce that Juja Mabati won the prestigious Starbrands East Africa Award 
                 for Most Quality and Affordable Seller of Iron Sheets, recognizing our commitment to providing 
                 high-quality roofing solutions at accessible prices.
@@ -243,14 +314,18 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up">
+              <div className={`rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 transition-all duration-700 delay-1000 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/S_brands.PNG"
                   alt="Starbrands East Africa Award for Most Quality and Affordable Seller of Iron Sheets"
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              <div className={`rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4 transition-all duration-700 delay-1100 ${
+                isAnimated('achievements') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+              }`}>
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/Sbrands%200.PNG"
                   alt="Starbrands East Africa Excellence Award"
@@ -263,83 +338,70 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-red-600 text-white">
+      <section 
+        id="testimonials" 
+        ref={setRef('testimonials')}
+        className={`py-20 bg-red-600 text-white transition-all duration-1000 ${
+          isAnimated('testimonials') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-down">Customer Satisfaction</h2>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+            <h2 className={`text-4xl md:text-5xl font-bold mb-6 transition-all duration-700 delay-200 ${
+              isAnimated('testimonials') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+            }`}>Customer Satisfaction</h2>
+            <p className={`text-xl opacity-90 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${
+              isAnimated('testimonials') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+            }`}>
               Join thousands of satisfied customers who trust Juja Mabati Factory 
               for their roofing needs across Kenya.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
-                ))}
-              </div>
-              <p className="text-lg mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
-                "Exceptional quality and fast delivery. Our warehouse roofing has been 
-                perfect for over 3 years now. Highly recommended!"
-              </p>
-              <div className="flex items-center">
-                <div className="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  <span className="font-bold text-lg">MK</span>
+            {[0, 1, 2].map((index) => (
+              <div 
+                key={index}
+                className={`bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group transition-all duration-700 ${
+                  isAnimated('testimonials') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+                }`}
+                style={{
+                  transitionDelay: isAnimated('testimonials') ? `${400 + index * 100}ms` : '0s'
+                }}
+              >
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
+                  ))}
                 </div>
-                <div>
-                  <p className="font-semibold group-hover:text-amber-300 transition-colors duration-300">Michael Kariuki</p>
-                  <p className="opacity-80 group-hover:opacity-100 transition-opacity duration-300">Industrial Client</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up" style={{animationDelay: '0.1s'}}>
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
-                ))}
-              </div>
-              <p className="text-lg mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
-                "Professional service from consultation to installation. The team 
-                delivered exactly what was promised on time."
-              </p>
-              <div className="flex items-center">
-                <div className="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  <span className="font-bold text-lg">SM</span>
-                </div>
-                <div>
-                  <p className="font-semibold group-hover:text-amber-300 transition-colors duration-300">Sarah Mwangi</p>
-                  <p className="opacity-80 group-hover:opacity-100 transition-opacity duration-300">Residential Client</p>
+                <p className="text-lg mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
+                  {index === 0 ? '"Exceptional quality and fast delivery. Our warehouse roofing has been perfect for over 3 years now. Highly recommended!"' :
+                   index === 1 ? '"Professional service from consultation to installation. The team delivered exactly what was promised on time."' :
+                   '"Value for money and outstanding customer support. The warranty gives us complete peace of mind for our investment."'}
+                </p>
+                <div className="flex items-center">
+                  <div className="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <span className="font-bold text-lg">
+                      {index === 0 ? 'MK' : index === 1 ? 'SM' : 'DN'}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-semibold group-hover:text-amber-300 transition-colors duration-300">
+                      {index === 0 ? 'Michael Kariuki' : index === 1 ? 'Sarah Mwangi' : 'David Njoroge'}
+                    </p>
+                    <p className="opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                      {index === 0 ? 'Industrial Client' : index === 1 ? 'Residential Client' : 'Commercial Client'}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 hover:-translate-y-2 transition-all duration-500 group animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-amber-400 fill-current group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" style={{transitionDelay: `${i * 50}ms`}} />
-                ))}
-              </div>
-              <p className="text-lg mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
-                "Value for money and outstanding customer support. The warranty 
-                gives us complete peace of mind for our investment."
-              </p>
-              <div className="flex items-center">
-                <div className="bg-white bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
-                  <span className="font-bold text-lg">DN</span>
-                </div>
-                <div>
-                  <p className="font-semibold group-hover:text-amber-300 transition-colors duration-300">David Njoroge</p>
-                  <p className="opacity-80 group-hover:opacity-100 transition-opacity duration-300">Commercial Client</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="text-center mt-16">
-            <div className="bg-white bg-opacity-10 inline-block px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 transition-all duration-300 group animate-slide-up">
+            <div className={`bg-white bg-opacity-10 inline-block px-8 py-4 rounded-lg backdrop-blur-sm hover:bg-opacity-20 hover:scale-105 transition-all duration-300 group transition-all duration-700 delay-700 ${
+              isAnimated('testimonials') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+            }`}>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-6 w-6 text-amber-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
                 <span className="text-xl font-semibold group-hover:text-amber-300 transition-colors duration-300">Customer Satisfaction 100% Guaranteed</span>
@@ -350,16 +412,28 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
+      <section 
+        id="cta" 
+        ref={setRef('cta')}
+        className={`py-20 bg-gray-900 text-white transition-all duration-1000 ${
+          isAnimated('cta') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-down">
+          <h2 className={`text-4xl md:text-5xl font-bold mb-6 transition-all duration-700 delay-200 ${
+            isAnimated('cta') ? 'animate-slide-down' : 'opacity-0 translate-y-10'
+          }`}>
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-10 leading-relaxed opacity-90 animate-slide-up">
+          <p className={`text-xl mb-10 leading-relaxed opacity-90 transition-all duration-700 delay-300 ${
+            isAnimated('cta') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+          }`}>
             Contact us today for a free consultation and quote. 
             Let us help you find the perfect roofing solution for your project.
           </p>
-          <div className="space-x-4 animate-slide-up">
+          <div className={`space-x-4 transition-all duration-700 delay-400 ${
+            isAnimated('cta') ? 'animate-slide-up' : 'opacity-0 translate-y-10'
+          }`}>
             <Link
               to="/contact"
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:rotate-1 shadow-lg inline-block"
