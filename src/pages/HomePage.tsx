@@ -93,7 +93,7 @@ const HomePage = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -212,18 +212,18 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG"
                   alt="Real Estate Award Recognition"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG"
                   alt="Commitment to Client Satisfaction Award"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
@@ -243,18 +243,18 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/S_brands.PNG"
                   alt="Starbrands East Africa Award for Most Quality and Affordable Seller of Iron Sheets"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500">
+              <div className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500 bg-gray-50 p-4">
                 <img
                   src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/Sbrands%200.PNG"
                   alt="Starbrands East Africa Excellence Award"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
