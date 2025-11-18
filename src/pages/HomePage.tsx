@@ -376,8 +376,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Add CSS for animations */}
-      <style jsx>{`
+      {/* Add CSS for all animations */}
+      <style>{`
         @keyframes slideDown {
           from {
             opacity: 0;
@@ -400,12 +400,67 @@ const HomePage = () => {
           }
         }
         
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+        
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-25px);
+          }
+        }
+        
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+        }
+        
+        @keyframes wiggle {
+          0%, 100% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(-2deg);
+          }
+          75% {
+            transform: rotate(2deg);
+          }
+        }
+        
         .animate-slide-down {
           animation: slideDown 0.8s ease-out forwards;
         }
         
         .animate-slide-up {
           animation: slideUp 0.8s ease-out forwards;
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-bounce {
+          animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .animate-pulse {
+          animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .animate-wiggle {
+          animation: wiggle 1s ease-in-out infinite;
         }
       `}</style>
     </div>
