@@ -39,10 +39,10 @@ const AboutPage = () => {
       description: 'Ms. Kingori heads the Marketing Department with creativity and focus. She is responsible for brand positioning, promotional campaigns, and customer engagement across all platforms. Her role is central to ensuring that the company remains connected to its customers through effective advertising, social media presence, and corporate events. She also builds relationships with contractors, schools, NGOs, and distributors, ensuring that Juja Mabati continues to expand its reach while staying true to its promise of “The Forever Mabati”'
     },
     {
-      name: 'Ms. Sandra Mahuro',
+      name: 'Position to be filled soon',
       position: 'Secretary',
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Sally.jpg?raw=true',
-      description: 'Ms. Mahuro plays a key administrative role within the company. She manages office correspondence, schedules, and records, while providing essential support to the executive team. Known for her professionalism and attention to detail, she ensures smooth communication and coordination across departments. Her organizational skills keep the company running efficiently, making her an integral part of daily operations.'
+      image: '',
+      description: 'Recruitment in progress. Position to be filled soon!'
     },
     {
       name: 'Mr. Mathew Nyabuto',
