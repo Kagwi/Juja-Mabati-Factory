@@ -41,7 +41,7 @@ const AboutPage = () => {
     {
       name: 'Position to be filled soon',
       position: 'Secretary',
-      image: '',
+      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/logo.png?raw=true',
       description: 'Recruitment in progress. Position to be filled soon!'
     },
     {
