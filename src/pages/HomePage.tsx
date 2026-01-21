@@ -9,17 +9,17 @@ const HomePage = () => {
 
   const slides = [
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Juja%20Mabati%20Awards.PNG',
       title: 'Juja Mabati Team',
       subtitle: 'Durable and aesthetically pleasing roofing solutions'
     },
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%205%20.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/public/Real%20Estate%20Awards.PNG',
       title: 'Juja Mabati Entrance',
       subtitle: 'Weather-resistant with superior finish'
     },
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%202.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/S_brands.PNG',
       title: 'Juja Mabati Front Office',
       subtitle: 'Large-scale roofing for commercial projects'
     },
@@ -29,7 +29,7 @@ const HomePage = () => {
       subtitle: 'Modern aesthetics with unmatched durability'
     },
     {
-      image: 'https://github.com/Kagwi/Juja-Mabati-Factory/blob/main/public/Team%20A.jpg?raw=true',
+      image: 'https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/Sbrands%200.PNG',
       title: 'Juja Mabati Founders',
       subtitle: 'Classic elegance meets modern engineering'
     },
