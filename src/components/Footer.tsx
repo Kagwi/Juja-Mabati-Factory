@@ -25,7 +25,7 @@ const Footer = () => {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/image.png" 
+                  src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/JUJA_MABATI_160x160.png" 
                   alt="Juja Mabati Factory Logo" 
                   className="h-12 w-auto object-contain hover:scale-110 hover:rotate-2 transition-all duration-300"
                 />
