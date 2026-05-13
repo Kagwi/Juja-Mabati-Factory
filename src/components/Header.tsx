@@ -35,7 +35,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-all duration-300 group">
             <img 
-              src="/image.png" 
+              src="https://raw.githubusercontent.com/Kagwi/Juja-Mabati-Factory/refs/heads/main/JUJA_MABATI_160x160.png" 
               alt="Juja Mabati Factory Logo" 
               className="h-16 w-auto object-contain group-hover:scale-110 group-hover:rotate-2 transition-all duration-300"
             />
