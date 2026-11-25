@@ -144,7 +144,7 @@ const Footer = () => {
             <p className="text-gray-200 text-sm">
               Created & Designed by{' '}
               <a
-                href="https://www.neonsolcreatives.com"
+                href="https://www.neonsolcreatives.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-amber-400 hover:text-yellow-300 hover:scale-105 transition-all duration-300 hover:underline hover:shadow-lg"
